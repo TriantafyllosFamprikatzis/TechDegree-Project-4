@@ -1,0 +1,21 @@
+.btn--default {
+  background: #51ddfc;
+  padding: 5px;
+  border-radius: 10px; }
+
+.btn--success {
+  background: #63cc82; }
+
+.btn--error {
+  background: #e4757a; }
+
+.btn--warning {
+  background: #fd7856; }
+
+.btn--info {
+  background: #927bc1; }
+
+.grid_col--6 {
+  background: #51ddfc; }
+
+/*# sourceMappingURL=styles.css.map */
