@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 .btn--default {
   background: #51ddfc;
   padding: 5px;
@@ -14,8 +17,5 @@
 
 .btn--info {
   background: #927bc1; }
-
-.grid_col--6 {
-  background: #51ddfc; }
 
 /*# sourceMappingURL=styles.css.map */
