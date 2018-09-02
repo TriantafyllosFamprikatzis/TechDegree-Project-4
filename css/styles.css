@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {
   box-sizing: border-box; }
 
+.container {
+  width: 85%;
+  margin: 0 auto; }
+
 .btn--default {
-  background: #51ddfc;
-  padding: 5px;
-  border-radius: 10px; }
+  background: #51ddfc; }
 
 .btn--success {
   background: #63cc82; }
@@ -17,5 +20,51 @@
 
 .btn--info {
   background: #927bc1; }
+
+.grid__col--12.theme__colors {
+  background: #58e1c1; }
+
+.grid__col--6.theme__colors {
+  background: #3fabca; }
+
+.grid__col--4.theme__colors {
+  background: #7ee6fd; }
+
+.grid__col--3.theme__colors {
+  background: #deb2ee; }
+
+.grid__col--5.theme__colors {
+  background: #88d9a0; }
+
+.grid__col--7.theme__colors {
+  background: #ec9fa3; }
+
+.grid__col--8.theme__colors {
+  background: #fd9f85; }
+
+.theme__colors {
+  padding: 5px;
+  border-radius: 5px;
+  border: none; }
+
+.container {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #818181; }
+
+a {
+  text-decoration: none; }
+
+nav a {
+  color: #818181; }
+  nav a .nav__item {
+    list-style: none; }
+
+.headline--primary {
+  color: #58e1c1;
+  font-weight: 900; }
+
+.link {
+  color: #51ddfc; }
 
 /*# sourceMappingURL=styles.css.map */

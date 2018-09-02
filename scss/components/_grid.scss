@@ -1,0 +1,35 @@
+//Color grid buttons
+.grid__col--12.theme__colors{
+background:$viking;
+}
+
+.grid__col--6.theme__colors{
+background:$shakespeare;
+}
+
+.grid__col--4.theme__colors{
+background:$anakiwa;
+}
+
+.grid__col--3.theme__colors{
+background:$french-lilac;
+}
+
+.grid__col--5.theme__colors{
+background:$vista-blue;
+}
+
+.grid__col--7.theme__colors{
+background:$sea-pink;
+}
+
+.grid__col--8.theme__colors{
+background:$vivid-tangerine;
+}
+
+
+.theme__colors{
+padding: 5px;
+border-radius: 5px;
+border:none;
+}
