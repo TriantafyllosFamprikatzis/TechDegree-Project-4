@@ -17,3 +17,8 @@ background:$coral;
 .btn--info{
 background:$purple-mountain;
 }
+
+.grid__row button{
+@include buttonstyles;
+max-width: $width92;
+}

@@ -1,0 +1,18 @@
+@mixin center{
+text-align: center;
+}
+
+@mixin grid{
+margin-top:4px;
+&:last-child{
+margin-bottom:35px;
+ }
+}
+
+@mixin buttonstyles{
+display:block;
+margin: 0 auto;
+width: 100%;
+margin-bottom: 15px;
+@content
+}

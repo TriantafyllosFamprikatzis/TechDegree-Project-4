@@ -1,18 +1,22 @@
 //Color grid buttons
 .grid__col--12.theme__colors{
 background:$viking;
+margin: 0px 0px 30px;
 }
 
 .grid__col--6.theme__colors{
 background:$shakespeare;
+@include grid;
 }
 
 .grid__col--4.theme__colors{
 background:$anakiwa;
+@include grid;
 }
 
 .grid__col--3.theme__colors{
 background:$french-lilac;
+@include grid;
 }
 
 .grid__col--5.theme__colors{
@@ -21,15 +25,25 @@ background:$vista-blue;
 
 .grid__col--7.theme__colors{
 background:$sea-pink;
+margin:4px 0px 4px;
+&:last-child{
+margin-bottom: 25px;
+ }
 }
 
 .grid__col--8.theme__colors{
 background:$vivid-tangerine;
+margin-top:35px;
 }
-
 
 .theme__colors{
 padding: 5px;
 border-radius: 5px;
 border:none;
+}
+
+.grid__row{
+align-content: center;
+max-width: $width95;
+margin:0 auto;
 }

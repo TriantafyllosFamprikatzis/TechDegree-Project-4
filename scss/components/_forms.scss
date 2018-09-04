@@ -1,0 +1,13 @@
+
+input[type="text"],
+input[type="password"]{
+border-width: 0px  0px 5px 0px;
+border-bottom-color:$viking;
+@include buttonstyles{
+margin-top: 30px;
+ }
+}
+
+.form__label--hidden{
+display:none;
+}

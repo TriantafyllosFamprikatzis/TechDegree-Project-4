@@ -2,8 +2,8 @@
 * {
   box-sizing: border-box; }
 
-.container {
-  width: 85%;
+p {
+  max-width: 80%;
   margin: 0 auto; }
 
 .btn--default {
@@ -21,44 +21,98 @@
 .btn--info {
   background: #927bc1; }
 
+.grid__row button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 15px;
+  max-width: 92%; }
+
+input[type="text"],
+input[type="password"] {
+  border-width: 0px  0px 5px 0px;
+  border-bottom-color: #58e1c1;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 30px; }
+
+.form__label--hidden {
+  display: none; }
+
 .grid__col--12.theme__colors {
-  background: #58e1c1; }
+  background: #58e1c1;
+  margin: 0px 0px 30px; }
 
 .grid__col--6.theme__colors {
-  background: #3fabca; }
+  background: #3fabca;
+  margin-top: 4px; }
+  .grid__col--6.theme__colors:last-child {
+    margin-bottom: 35px; }
 
 .grid__col--4.theme__colors {
-  background: #7ee6fd; }
+  background: #7ee6fd;
+  margin-top: 4px; }
+  .grid__col--4.theme__colors:last-child {
+    margin-bottom: 35px; }
 
 .grid__col--3.theme__colors {
-  background: #deb2ee; }
+  background: #deb2ee;
+  margin-top: 4px; }
+  .grid__col--3.theme__colors:last-child {
+    margin-bottom: 35px; }
 
 .grid__col--5.theme__colors {
   background: #88d9a0; }
 
 .grid__col--7.theme__colors {
-  background: #ec9fa3; }
+  background: #ec9fa3;
+  margin: 4px 0px 4px; }
+  .grid__col--7.theme__colors:last-child {
+    margin-bottom: 25px; }
 
 .grid__col--8.theme__colors {
-  background: #fd9f85; }
+  background: #fd9f85;
+  margin-top: 35px; }
 
 .theme__colors {
   padding: 5px;
   border-radius: 5px;
   border: none; }
 
+.grid__row {
+  align-content: center;
+  max-width: 95%;
+  margin: 0 auto; }
+
+.img--frame {
+  max-width: 100%; }
+
+.img--avatar {
+  max-width: 50%; }
+
+.nav {
+  list-style: none; }
+
+ul.nav {
+  padding: 0;
+  text-align: center; }
+
 .container {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #818181; }
+
+button {
+  font-family: "Open Sans", sans-serif;
+  color: white; }
 
 a {
   text-decoration: none; }
 
 nav a {
   color: #818181; }
-  nav a .nav__item {
-    list-style: none; }
 
 .headline--primary {
   color: #58e1c1;
@@ -66,5 +120,11 @@ nav a {
 
 .link {
   color: #51ddfc; }
+
+.blockquote {
+  border-left: 8px solid #58e1c1;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin: 20px 6px; }
 
 /*# sourceMappingURL=styles.css.map */
