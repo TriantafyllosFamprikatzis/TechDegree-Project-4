@@ -1,3 +1,4 @@
+//Colors
 .btn--default{
 background:$malibu;
 }
@@ -18,7 +19,8 @@ background:$coral;
 background:$purple-mountain;
 }
 
+//Styles
 .grid__row button{
 @include buttonstyles;
-max-width: $width92;
+max-width:$medium-width;
 }

@@ -1,7 +1,15 @@
+img.img--logo{
+max-width:50%;
+margin-top:2em;
+@include align;
+}
+
 .img--frame{
 max-width:100%;
+@include align;
 }
 
 .img--avatar{
 max-width: 50%;
+@include align;
 }

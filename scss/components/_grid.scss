@@ -36,14 +36,15 @@ background:$vivid-tangerine;
 margin-top:35px;
 }
 
+//Styles
 .theme__colors{
-padding: 5px;
+padding: 10px;
 border-radius: 5px;
 border:none;
 }
 
 .grid__row{
 align-content: center;
-max-width: $width95;
+max-width: $wide-width;
 margin:0 auto;
 }
