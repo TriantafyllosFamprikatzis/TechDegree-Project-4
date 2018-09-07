@@ -23,4 +23,11 @@ margin-bottom: 15px;
 @content;
 }
 
-@mixin desktop{}
+//Media queries 1400px
+@mixin nav-flex{
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+margin: 0 auto;
+padding: 20px;
+}

@@ -36,11 +36,7 @@ a{
 
 //Media query
 @media (min-width:$media-desktop){
-.nav{
- display:flex;
- flex-direction: row;
- justify-content: center;
- margin: 0 auto;
+.grid__row:first-child, .nav{
+@include nav-flex;
  }
-
 }

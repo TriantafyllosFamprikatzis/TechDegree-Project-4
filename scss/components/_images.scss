@@ -1,7 +1,16 @@
-img.img--logo{
+.img--logo{
 max-width:50%;
 margin-top:2em;
 @include align;
+}
+
+.img--logo{
+transition:1s;
+}
+
+.img--logo:hover{
+transform:rotate(360deg);
+transition-timing-function:cubic-bezier(.76,-1.1,.56,.84);
 }
 
 .img--frame{

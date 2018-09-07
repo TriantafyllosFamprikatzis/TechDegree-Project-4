@@ -87,11 +87,18 @@ input[type="password"] {
   max-width: 95%;
   margin: 0 auto; }
 
-img.img--logo {
+.img--logo {
   max-width: 50%;
   margin-top: 2em;
   display: block;
   margin: 0 auto; }
+
+.img--logo {
+  transition: 1s; }
+
+.img--logo:hover {
+  transform: rotate(360deg);
+  transition-timing-function: cubic-bezier(0.76, -1.1, 0.56, 0.84); }
 
 .img--frame {
   max-width: 100%;
@@ -135,11 +142,12 @@ ul.nav {
     color: #ffff; }
 
 @media (min-width: 1400px) {
-  .nav {
+  .grid__row:first-child, .nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 0 auto; } }
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px; } }
 .container {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -176,5 +184,21 @@ nav a {
   border-radius: 5px;
   padding-left: 15px;
   margin: 20px 6px; }
+
+@media (min-width: 1400px) {
+  .grid__row:nth-child(3), .grid__col--4:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+  .grid__col--8:first-child {
+    width: 50%;
+    height: 80%;
+    max-width: 480px; }
+
+  .form {
+    width: 200%;
+    height: 200%;
+    max-width: 480px; } }
 
 /*# sourceMappingURL=styles.css.map */

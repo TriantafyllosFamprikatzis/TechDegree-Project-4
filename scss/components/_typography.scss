@@ -46,3 +46,27 @@ border-radius: 5px;
 padding-left: 15px;
 margin: 20px 6px;
 }
+
+//Media queries
+@media (min-width:$media-desktop){
+.grid__row:nth-child(3), .grid__col--4:first-child{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+ 
+ }
+
+.grid__col--8:first-child{
+    width:50%;
+    height: 80%;
+    max-width: 480px;
+  
+ }
+
+.form{
+    width:200%;
+    height: 200%;
+    max-width: 480px;
+  
+ }
+}
