@@ -1,17 +1,13 @@
 .img--logo{
 max-width:50%;
 margin-top:2em;
+transition: 1s;
 @include align;
-}
-
-.img--logo{
-transition:1s;
-}
-
-.img--logo:hover{
+&:hover{
 transform:rotate(360deg);
 transition-timing-function:cubic-bezier(.76,-1.1,.56,.84);
 }
+ }
 
 .img--frame{
 max-width:100%;
@@ -21,4 +17,14 @@ max-width:100%;
 .img--avatar{
 max-width: 50%;
 @include align;
+}
+
+//Media Queries
+@media(min-width:$media-desktop){
+  .grid__row:nth-child(5){
+  @include img-flex;
+  }  
+  .grid__col--6{
+  flex-basis: 50%;
+  }
 }

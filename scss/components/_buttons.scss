@@ -2,19 +2,15 @@
 .btn--default{
 background:$malibu;
 }
-
 .btn--success{
 background:$emerald;
 }
-
 .btn--error{
 background:$sunglo;
 }
-
 .btn--warning{
 background:$coral;
 }
-
 .btn--info{
 background:$purple-mountain;
 }
@@ -23,4 +19,11 @@ background:$purple-mountain;
 .grid__row button{
 @include buttonstyles;
 max-width:$medium-width;
+}
+
+//Media Queries
+@media(min-width:$media-desktop){
+.grid__col--12:only-child{
+ @include btn-flex;
+ }
 }
