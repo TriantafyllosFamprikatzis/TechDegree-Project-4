@@ -22,9 +22,9 @@ max-width: 50%;
 //Media Queries
 @media(min-width:$media-desktop){
   .grid__row:nth-child(5){
-  @include img-flex;
+  @include flex($dir:row, $just:center);
   }  
   .grid__col--6{
-  flex-basis: 50%;
+  flex-basis: 40%;
   }
 }

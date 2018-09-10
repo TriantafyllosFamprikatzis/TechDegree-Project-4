@@ -1,33 +1,29 @@
 //Color grid buttons
 .grid__col--12.theme__colors{
 background:$viking;
-margin: 0px 0px 30px;
 }
 .grid__col--6.theme__colors{
 background:$shakespeare;
-@include grid;
+margin-top:4px;
 }
 .grid__col--4.theme__colors{
 background:$anakiwa;
-@include grid;
+margin-top:4px;
 }
 .grid__col--3.theme__colors{
 background:$french-lilac;
-@include grid;
+margin-top:4px;
 }
 .grid__col--5.theme__colors{
 background:$vista-blue;
+margin-top:4px;
 }
 .grid__col--7.theme__colors{
 background:$sea-pink;
-margin:4px 0px 4px;
-&:last-child{
-margin-bottom: 25px;
- }
+margin-top:4px;
 }
 .grid__col--8.theme__colors{
 background:$vivid-tangerine;
-margin-top:35px;
 }
 
 //Styles
@@ -40,16 +36,53 @@ border:none;
 .grid__row{
 align-content: center;
 max-width: $wide-width;
+padding-bottom:35px;
 margin:0 auto;
 }
 
 //Media Queries
-@media(min-width:$media-desktop){
+@media only screen and(min-width:$media-desktop){
 .grid__row{
-display: flex;
+@include flex($disp:flex, $dir:row, $align:baseline);
+text-align: center;
 }
 
+.grid__col--12.theme__colors{
+flex-grow:1;
+margin:0px 5px 0px 5px;
+}
+
+.grid__col--6.theme__colors{
+flex-grow:1;
+margin:0px 5px 0px 5px;
+}
 .grid__col--4.theme__colors{
-flex-basis: 50%;
+flex-grow:1;
+margin:0px 5px 0px 5px;
+}
+
+.grid__col--3.theme__colors{
+flex-grow:1;
+margin:0px 5px 0px 5px;
+}
+
+.grid__col--5.theme__colors{
+flex-grow:1;
+margin:0px 10px 0px 5px;
+}
+
+.grid__col--7.theme__colors{
+flex-grow:2;
+margin:0px 10px 0px 5px;
+}
+
+.grid__col--8.theme__colors{
+flex-grow:2;
+margin:0px 5px 0px 5px;
+}
+
+.grid__col--7.theme__colors.centered{
+max-width:50%;
+margin:auto;
 }
  }

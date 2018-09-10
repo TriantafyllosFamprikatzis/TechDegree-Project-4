@@ -45,12 +45,14 @@ margin: 20px 6px;
 //Media Queries
 @media (min-width:$media-desktop){
 .grid__row:nth-child(3){
-@include typ-flex;
+@include flex($dir:row, $just:space-evenly);
+max-width:$narrow-width;
  }
-.grid__col--8:nth-child(1){
-flex-basis:50%;
+.grid__col--8{
+flex-grow:1;
+max-width:700px;
  }
-.grid__col--4:nth-child(2){
-flex-basis:30%;
+.grid__col--4{
+flex-grow:2;
  }
 }
