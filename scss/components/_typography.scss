@@ -6,6 +6,7 @@
 font-family:$bodyfont;
 font-size:16px;
 color:$grey;
+margin-top:2em;
 }
 
 button.theme__colors{
@@ -22,13 +23,15 @@ font-weight:600;
 .headline--primary{
 color:$viking;
 font-weight:900;
+max-width:100%;
+margin: 0px 0px 20px 20px; 
 }
 
 .headline--secondary{
-max-width:$medium-width;
+max-width:82%;
 margin: 0 auto;
 font-weight:100;
-padding:40px 0;
+padding:20px 0;
 }
 
 .link{
@@ -37,9 +40,10 @@ color:$malibu;
 
 .blockquote{
 border-left: 8px solid $viking;
+font-size:x-large;
 border-radius: 5px;
 padding-left: 15px;
-margin: 20px 6px;
+margin:20px 15px;
 }
 
 //Media Queries

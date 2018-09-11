@@ -1,6 +1,5 @@
 .img--logo{
 max-width:50%;
-margin-top:2em;
 transition: 1s;
 @include align;
 &:hover{
@@ -10,13 +9,16 @@ transition-timing-function:cubic-bezier(.76,-1.1,.56,.84);
  }
 
 .img--frame{
-max-width:100%;
+max-width:$medium-width;
 @include align;
+border:15px solid white;
+outline:1px solid $silver;
 }
 
 .img--avatar{
 max-width: 50%;
 @include align;
+margin-top:1em;
 }
 
 //Media Queries
@@ -27,4 +29,8 @@ max-width: 50%;
   .grid__col--6{
   flex-basis: 40%;
   }
+
+.img--logo{
+max-width:80%;
+ }
 }

@@ -38,6 +38,19 @@ a{
 .grid__row:first-child, .nav{
 @include flex($dir:row, $just:space-between);
 margin: 0 auto;
-padding: 20px;
+padding:10px;
+max-width:60%;
+ }
+.grid__row:first-child{
+margin-left:150px;
+}
+
+.nav__item{
+padding:10px 20px;
+}
+
+.card{
+margin:50px;
+text-align: left;
  }
 }
