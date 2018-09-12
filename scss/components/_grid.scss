@@ -44,41 +44,28 @@ margin:0 auto;
 @media only screen and(min-width:$media-desktop){
 .grid__row{
 @include flex($disp:flex, $dir:row);
-text-align: center;
 }
 
 .grid__col--12.theme__colors{
 flex-grow:1;
 margin:0px 5px 0px 5px;
+justify-content:center;
 }
 
-.grid__col--6.theme__colors{
-flex-grow:1;
-margin:0px 5px 0px 5px;
-}
-.grid__col--4.theme__colors{
-flex-grow:1;
-margin:0px 5px 0px 5px;
-}
-
-.grid__col--3.theme__colors{
-flex-grow:1;
-margin:0px 5px 0px 5px;
-}
-
+.grid__col--6.theme__colors,
+.grid__col--4.theme__colors,
+.grid__col--3.theme__colors,
 .grid__col--5.theme__colors{
 flex-grow:1;
 margin:0px 5px 0px 5px;
+text-align: center;
 }
 
-.grid__col--7.theme__colors{
-flex-grow:2;
-margin:0px 5px 0px 5px;
-}
-
+.grid__col--7.theme__colors,
 .grid__col--8.theme__colors{
 flex-grow:2;
 margin:0px 5px 0px 5px;
+text-align: center;
 }
 
 .grid__col--7.theme__colors.centered{

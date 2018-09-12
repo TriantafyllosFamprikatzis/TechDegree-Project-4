@@ -27,19 +27,11 @@ max-width:$medium-width;
  @include flex($dir:row);
  flex-grow:1;
  }
- .grid__col--12 .btn--default{
+ .grid__col--12 .btn--default,
+ .btn--success,
+ .btn--error,
+ .btn--warning,
+ .btn--info{
  margin:0px 50px 0px 50px !important;
- }
-.btn--success{
-margin:0px 50px 0px 50px !important;
-}
-.btn--error{
-margin:0px 50px 0px 50px !important;
-}
-.btn--warning{
-margin:0px 50px 0px 50px !important;
-}
-.btn--info{
-margin:0px 50px 0px 50px !important;
  }
 }

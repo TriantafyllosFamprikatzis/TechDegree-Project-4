@@ -2,9 +2,6 @@
 * {
   box-sizing: border-box; }
 
-p {
-  margin: 0 auto; }
-
 .btn--default {
   background: #51ddfc; }
 
@@ -33,18 +30,10 @@ p {
     flex-direction: row;
     flex-grow: 1; }
 
-  .grid__col--12 .btn--default {
-    margin: 0px 50px 0px 50px !important; }
-
-  .btn--success {
-    margin: 0px 50px 0px 50px !important; }
-
-  .btn--error {
-    margin: 0px 50px 0px 50px !important; }
-
-  .btn--warning {
-    margin: 0px 50px 0px 50px !important; }
-
+  .grid__col--12 .btn--default,
+  .btn--success,
+  .btn--error,
+  .btn--warning,
   .btn--info {
     margin: 0px 50px 0px 50px !important; } }
 input[type="text"],
@@ -60,6 +49,9 @@ input[type="password"] {
 
 .form__label--hidden {
   display: none; }
+
+.form {
+  margin-top: 2.5em; }
 
 .grid__col--12.theme__colors {
   background: #58e1c1; }
@@ -101,36 +93,26 @@ input[type="password"] {
 @media only screen and (min-width: 1400px) {
   .grid__row {
     display: flex;
-    flex-direction: row;
-    text-align: center; }
+    flex-direction: row; }
 
   .grid__col--12.theme__colors {
     flex-grow: 1;
-    margin: 0px 5px 0px 5px; }
+    margin: 0px 5px 0px 5px;
+    justify-content: center; }
 
-  .grid__col--6.theme__colors {
-    flex-grow: 1;
-    margin: 0px 5px 0px 5px; }
-
-  .grid__col--4.theme__colors {
-    flex-grow: 1;
-    margin: 0px 5px 0px 5px; }
-
-  .grid__col--3.theme__colors {
-    flex-grow: 1;
-    margin: 0px 5px 0px 5px; }
-
+  .grid__col--6.theme__colors,
+  .grid__col--4.theme__colors,
+  .grid__col--3.theme__colors,
   .grid__col--5.theme__colors {
     flex-grow: 1;
-    margin: 0px 5px 0px 5px; }
+    margin: 0px 5px 0px 5px;
+    text-align: center; }
 
-  .grid__col--7.theme__colors {
-    flex-grow: 2;
-    margin: 0px 5px 0px 5px; }
-
+  .grid__col--7.theme__colors,
   .grid__col--8.theme__colors {
     flex-grow: 2;
-    margin: 0px 5px 0px 5px; }
+    margin: 0px 5px 0px 5px;
+    text-align: center; }
 
   .grid__col--7.theme__colors.centered {
     max-width: 50%;
@@ -221,6 +203,8 @@ input[type="password"] {
   font-size: 16px;
   color: #818181;
   margin-top: 2em; }
+  p .container {
+    margin: 0 auto; }
 
 button.theme__colors {
   font-family: "Open Sans", sans-serif;
