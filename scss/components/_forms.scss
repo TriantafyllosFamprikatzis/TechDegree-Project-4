@@ -1,13 +1,9 @@
 //Styles
-input[type="text"],
-input[type="password"]{
-border-width: 0px  0px 5px 0px;
+.form__input{
+@include box-style($mar-t:30px, $wid-m:85%, $disp:block, $mar:0 auto, $wid:100%, $mar-b:25px, $brd-w:0px  0px 5px 0px);
 border-bottom-color:$viking;
-@include buttonstyles{
-margin-top: 30px;
-max-width:85%;
- }
 }
+
 .form__label--hidden{
 display:none;
 }

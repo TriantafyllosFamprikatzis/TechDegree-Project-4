@@ -1,33 +1,34 @@
-@mixin align{
-display:block;
-margin:0 auto;
+//Styles
+@mixin box-style(
+$mar:null,
+$mar-b:null,
+$mar-t:null,
+$wid-m:null,
+$wid:null,
+$fnt:null,
+$pad:null,
+$txt:null,
+$clr:null,
+$disp:null,
+$brd:null,
+$brd-w:null,
+$brd-r:null){
+margin:$mar;
+margin-bottom:$mar-b;
+margin-top:$mar-t;
+max-width:$wid-m;
+width:$wid;
+font-weight:$fnt;
+padding:$pad;
+text-align:$txt;
+color:$clr;
+display:$disp;
+border:$brd;
+border-width:$brd-w;
+border-radius:$brd-r;
 }
 
-@mixin nav-border{
-border-width: 10px 15px;
-border-radius: 5px;
-}
-
-@mixin buttonstyles{
-display:block;
-margin: 0 auto;
-width: 100%;
-margin-bottom:25px;
-@content;
-}
-
-//Breakpoints
-$desktop:1400px;
-
-//Media queries
-@mixin mq($desktop){
-@if $desktop == 'desktop'{
- @media (max-width:$desktop){
- @content;
-  }
- }
-}
-
+//Flex-box
 @mixin flex(
 $disp:flex,
 $dir:null,
@@ -39,4 +40,23 @@ flex-direction:$dir;
 flex-wrap:$wrap;
 justify-content:$just;
 align-items:$align;
+}
+
+//Media query
+@mixin mq($break){
+ @if $break == "small"{
+  @media (min-width:$brkpoint-sm) and (max-width:$brkpoint-md){
+  @content;
+  }
+ }
+ @else if $break == "medium"{
+  @media (min-width:$brkpoint-md + 1){
+   @content;
+  }
+ }
+@else if $break == "large"{
+ @media (min-width:$brkpoint-lg){
+  @content;
+ }
+}
 }

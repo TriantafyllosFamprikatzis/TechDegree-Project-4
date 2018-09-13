@@ -1,13 +1,11 @@
 //Styles
 .nav{
+@include box-style($pad:0, $txt:center);
 list-style: none;
-padding:0;
-text-align: center;
 }
 
 .nav__item{
-padding: 10px 15px;
-@include nav-border;
+@include box-style($pad:10px 15px, $brd-w:10px 15px, $brd-r:5px);
 transition-duration:900ms;
 transition-property: background, border-radius, color;
 transition-timing-function: ease-in-out; 
@@ -17,16 +15,15 @@ text-decoration:none;
 }
 &:hover{
 background-color: $viking;
-@include nav-border;
+@include box-style($brd-w:10px 15px, $brd-r:5px);
 a{
 color:#ffff;
 transition-duration:1.3s;
   } 
  }
 &:active{
-@include nav-border;
+@include box-style($brd-w:10px 15px, $brd-r:5px, $brd:30px);
 background-color: $viking;
-border:30px;
 a{
  color:#ffff;
   } 
@@ -34,12 +31,10 @@ a{
 }
 
 //Media Query
-@media (min-width:$media-desktop){
+@include mq(large){
 .grid__row:first-child, .nav{
 @include flex($dir:row, $just:space-between);
-margin: 0 auto;
-padding:10px;
-max-width:60%;
+@include box-style($mar:0 auto, $wid-m:60%, $pad:10px);
  }
 .grid__row:first-child{
 margin-left:150px;
@@ -50,7 +45,6 @@ padding:10px 20px;
 }
 
 .card{
-margin:50px;
-text-align: left;
+@include box-style($mar:50px, $txt:left);
  }
 }

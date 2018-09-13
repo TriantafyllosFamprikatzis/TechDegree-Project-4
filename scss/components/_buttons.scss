@@ -17,12 +17,11 @@ background:$purple-mountain;
 
 //Styles
 .grid__row button{
-@include buttonstyles;
-max-width:$medium-width;
+@include box-style($wid-m:92%, $disp:block, $mar:0 auto, $wid:100%, $mar-b:25px);
 }
 
 //Media Queries
-@media(min-width:$media-desktop){
+@include mq(large){
 .grid__col--12:only-child{
  @include flex($dir:row);
  flex-grow:1;
