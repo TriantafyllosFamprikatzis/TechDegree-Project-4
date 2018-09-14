@@ -1,5 +1,6 @@
+//Styles
 .img--logo{
-@include box-style($mar:0 auto, $disp:block, $wid-m:50%);
+@include box-style($mar:0 auto, $disp:block, $wid-m:50%, $pad:1em 0 1em 0);
 transition: 1s;
 &:hover{
 transform:rotate(360deg);
@@ -8,7 +9,7 @@ transition-timing-function:cubic-bezier(.76,-1.1,.56,.84);
  }
 
 .img--frame{
-@include box-style($mar:0 auto, $disp:block, $wid-m:92%, $brd:15px solid white);
+@include box-style($mar:0 auto, $disp:block, $wid-m:92%, $brd:15px solid #fff);
 outline:1px solid $silver;
 }
 
@@ -25,6 +26,6 @@ outline:1px solid $silver;
 flex-basis: 40%;
 }
 .img--logo{
-max-width:80%;
+@include box-style($wid-m:80%, $pad:0)
  }
 }

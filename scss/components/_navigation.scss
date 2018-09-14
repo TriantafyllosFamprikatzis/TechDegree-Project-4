@@ -1,4 +1,4 @@
-//Styles
+//Styling
 .nav{
 @include box-style($pad:0, $txt:center);
 list-style: none;
@@ -17,7 +17,7 @@ text-decoration:none;
 background-color: $viking;
 @include box-style($brd-w:10px 15px, $brd-r:5px);
 a{
-color:#ffff;
+color:#fff;
 transition-duration:1.3s;
   } 
  }
@@ -25,7 +25,7 @@ transition-duration:1.3s;
 @include box-style($brd-w:10px 15px, $brd-r:5px, $brd:30px);
 background-color: $viking;
 a{
- color:#ffff;
+ color:#fff;
   } 
  }
 }
@@ -39,11 +39,9 @@ a{
 .grid__row:first-child{
 margin-left:150px;
 }
-
 .nav__item{
 padding:10px 20px;
 }
-
 .card{
 @include box-style($mar:50px, $txt:left);
  }

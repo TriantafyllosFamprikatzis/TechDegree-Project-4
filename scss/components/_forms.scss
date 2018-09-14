@@ -1,12 +1,11 @@
 //Styles
-.form__input{
-@include box-style($mar-t:30px, $wid-m:85%, $disp:block, $mar:0 auto, $wid:100%, $mar-b:25px, $brd-w:0px  0px 5px 0px);
-border-bottom-color:$viking;
-}
-
-.form__label--hidden{
-display:none;
-}
 .form{
-margin-top:2.5em;
-}
+    margin-top:2.5em;  
+ &__input{
+ @include box-style($mar-t:30px, $wid-m:85%, $disp:block, $mar:0 auto, $wid:100%, $mar-b:25px, $brd-w:0px  0px 5px 0px);
+ border-bottom-color:$viking;
+  }
+ &__label--hidden{
+ display:none;
+  }
+ }
