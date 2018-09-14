@@ -1,3 +1,4 @@
+//Styling
 //Color grid buttons
 .grid__col--12.theme__colors{
 background:$viking;
@@ -28,11 +29,11 @@ background:$vivid-tangerine;
 
 //Styles
 .theme__colors{
-@include box-style($pad:10px, $brd-r:5px, $brd:none);
+@include styling($pad:10px, $brd-r:5px, $brd:none);
 }
 
 .grid__row{
-@include box-style($mar:0 auto, $wid-m:82%);
+@include styling($mar:0 auto, $wid-m:82%);
 align-content: center;
 padding-bottom:35px;
 }
@@ -48,18 +49,18 @@ padding-bottom:35px;
 .grid__col--4.theme__colors,
 .grid__col--3.theme__colors,
 .grid__col--5.theme__colors{
-@include box-style($mar:0px 5px 0px 5px, $txt:center);
+@include styling($mar:0px 5px 0px 5px, $txt:center);
 justify-content:center;
 flex-grow:1;
 }
 
 .grid__col--7.theme__colors,
 .grid__col--8.theme__colors{
-@include box-style($mar:0px 5px 0px 5px, $txt:center);
+@include styling($mar:0px 5px 0px 5px, $txt:center);
 flex-grow:2;
 }
 
 .grid__col--7.theme__colors.centered{
-@include box-style($mar:auto, $wid-m:50%);
+@include styling($mar:auto, $wid-m:50%);
 }
  }

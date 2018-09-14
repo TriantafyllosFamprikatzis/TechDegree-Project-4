@@ -1,3 +1,4 @@
+//Styling
 //Colors
 .btn--default{
 background:$malibu;
@@ -17,7 +18,7 @@ background:$purple-mountain;
 
 //Styles
 .grid__row button{
-@include box-style($wid-m:92%, $disp:block, $mar:0 auto, $wid:100%, $mar-b:25px);
+@include styling($wid-m:92%, $disp:block, $mar:0 auto, $wid:100%, $mar-b:25px);
 }
 
 //Media Queries

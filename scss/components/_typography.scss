@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 //Font styling
 .container{
+@include styling($clr:$grey, $mar-t:2em);
 font-family:$bodyfont;
 font-size:16px;
-color:$grey;
-margin-top:2em;
 p &{
 margin: 0 auto;
 }
@@ -23,11 +22,11 @@ font-weight:600;
 }
 
 .headline--primary{
-@include box-style($mar:0px 0px 20px 20px, $wid-m:100%, $fnt:900, $clr:$viking);
+@include styling($mar:0px 0px 20px 20px, $wid-m:100%, $fnt:900, $clr:$viking);
 }
 
 .headline--secondary{
-@include box-style($mar:0 auto, $wid-m:82%, $fnt:100, $pad:20px 0);
+@include styling($mar:0 auto, $wid-m:82%, $fnt:100, $pad:20px 0);
 }
 
 .link{
@@ -35,7 +34,7 @@ color:$malibu;
 }
 
 .blockquote{
-@include box-style($brd-r:5px, $mar:20px 15px);
+@include styling($brd-r:5px, $mar:20px 15px);
 border-left: 8px solid $viking;
 font-size:x-large;
 padding-left: 15px;
